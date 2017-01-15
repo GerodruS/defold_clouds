@@ -1,0 +1,21 @@
+const float cloudScale = 0.0128;
+
+uniform mediump mat4 view_proj;
+uniform mediump mat4 world;
+uniform lowp vec4 vc_data_1;
+
+attribute mediump vec4 position;
+attribute mediump vec2 texcoord0;
+
+varying mediump vec2 var_texcoord0;
+varying mediump vec2 var_texcoord1;
+
+void main()
+{
+    lowp float time = vc_data_1.x;
+    
+    gl_Position = view_proj * vec4(position.xyz, 1.0);
+    
+    var_texcoord0 = texcoord0 * cloudScale + time * 0.00004 - 0.5;
+    var_texcoord1 = texcoord0 * cloudScale + time * 0.00002 - 10.5;
+}

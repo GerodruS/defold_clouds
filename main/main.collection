@@ -22,7 +22,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/main/images/noise.atlas\\\"\\n"
   "default_animation: \\\"noise_256\\\"\\n"
-  "material: \\\"/materials/effect_clouds.material\\\"\\n"
+  "material: \\\"/materials/effect_clouds_v2.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
